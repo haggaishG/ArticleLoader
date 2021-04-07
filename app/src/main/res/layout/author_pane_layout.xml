@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/author_pane_height">
+    android:layout_height="wrap_content">
     <ImageView android:id="@+id/author_avatar"
-        android:layout_width="@dimen/author_pane_height"
-        android:layout_height="@dimen/author_pane_height"/>
+        android:layout_width="@dimen/author_avatar_size"
+        android:layout_height="@dimen/author_avatar_size"
+        android:layout_marginRight="@dimen/article_design_margin"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

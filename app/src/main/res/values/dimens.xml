@@ -3,4 +3,5 @@
     <dimen name="article_image_height">219dp</dimen>
     <dimen name="article_design_margin">16dp</dimen>
     <dimen name="author_pane_height">24dp</dimen>
+    <dimen name="author_avatar_size">40dp</dimen>
 </resources>

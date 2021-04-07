@@ -71,8 +71,8 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
         ImageView imageView;
         ImageView authorAvatar;
-        Button saveButton;
-        Button likeButton;
+        ImageView saveButton;
+        ImageView likeButton;
         TextView title;
         TextView category;
         TextView likeCount;
