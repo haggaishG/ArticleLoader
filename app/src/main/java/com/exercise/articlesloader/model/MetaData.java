@@ -26,11 +26,15 @@ public class MetaData {
     }
 
 
-    public static String formatDate(String date) throws ParseException {
+    public static String formatDate(String date) {
         //"2017-03-14T06:44:19.000Z",
-//        SimpleDateFormat spf=new SimpleDateFormat("MMM dd, yyyy hh:mm:ss aaa");
-        SimpleDateFormat spf=new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.aaa");
-        Date newDate=spf.parse(date);
+        SimpleDateFormat spf=new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSX");
+        Date newDate= null;
+        try {
+            newDate = spf.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         spf= new SimpleDateFormat("dd MMM, yyyy");
         date = spf.format(newDate);
         return date ;

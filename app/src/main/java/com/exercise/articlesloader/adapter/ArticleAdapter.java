@@ -53,13 +53,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         holder.category.setText(article.getCategory());
         holder.likeCount.setText(article.getLikesCount()!= 0 ? ""+article.getLikesCount() : "");
         holder.authorName.setText(article.getAuthor().getAuthorName());
-
-        try {
-            holder.lastUpdate.setText(MetaData.formatDate(article.getMetaData().getUpdateTime()));
-        } catch (ParseException e) {
-            e.printStackTrace();
-            holder.lastUpdate.setText("---");
-        }
+        holder.lastUpdate.setText(MetaData.formatDate(article.getMetaData().getUpdateTime()));
     }
 
     @Override
